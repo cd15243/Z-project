@@ -16,7 +16,7 @@ public class luaUseCsharp : MonoBehaviour
     {
         LuaEnv env = new LuaEnv();
 
-        //Luaµ÷ÓÃc#´úÂë£¨CS.ÃüÃû¿Õ¼ä.·½·¨Ãû(²ÎÊı)£©
+        //Luaè°ƒç”¨c#ä»£ç ï¼ˆCS.å‘½åç©ºé—´.æ–¹æ³•å(å‚æ•°)ï¼‰
         env.DoString("CS.UnityEngine.Debug.Log('from lua')");
 
         //env.DoString("");
@@ -28,8 +28,8 @@ public class luaUseCsharp : MonoBehaviour
         LuaEnv env = new LuaEnv();
 
         object[] data = env.DoString("return 100,true");
-        Debug.Log("LuaµÄµÚÒ»¸ö·µ»ØÖµ£º" + data[0].ToString());
-        Debug.Log("LuaµÄµÚ¶ş¸ö·µ»ØÖµ£º" + data[1].ToString());
+        Debug.Log("Luaï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½" + data[0].ToString());
+        Debug.Log("Luaï¿½ÄµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½" + data[1].ToString());
         env.Dispose();
     }
 }

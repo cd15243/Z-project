@@ -8,7 +8,7 @@ public class TestLua : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //»ñÈ¡xLua½âÎöÆ÷
+        //åˆ›å»ºLuaç¯å¢ƒ
         LuaEnv env = new LuaEnv();
 
         env.DoString("print('Hello world!')");
